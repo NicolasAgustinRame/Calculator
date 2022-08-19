@@ -133,5 +133,45 @@ namespace CalculadoraApp
             num1 = input;
             input = string.Empty;
         }
+
+        private void btnCA_Click(object sender, EventArgs e)
+        {
+            num1 = string.Empty;
+            num2 = string.Empty;
+            input = string.Empty;
+            resultado = 0.0;
+            txtDisplay.Text = "0";
+        }
+
+        private void btnResult_Click(object sender, EventArgs e)
+        {
+            num2 = input;
+            double primernum, segundonum;
+            primernum = Convert.ToDouble(num1);
+            segundonum = Convert.ToDouble(num2);
+
+            if (funcion == '+')
+            {
+                resultado = primernum + segundonum;
+                txtDisplay.Text = resultado.ToString();
+            }
+            else if (funcion == '-')
+            {
+                resultado = primernum - segundonum;
+                txtDisplay.Text = resultado.ToString();
+            }
+
+            else if (funcion == '*')
+            {
+                resultado = primernum * segundonum;
+                txtDisplay.Text = resultado.ToString();
+            }
+
+            else if (funcion == '/')
+            {
+                resultado = primernum / segundonum;
+                txtDisplay.Text = resultado.ToString();
+            }
+        }
     }
 }

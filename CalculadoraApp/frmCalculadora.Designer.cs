@@ -113,6 +113,7 @@
             this.btnCA.TabIndex = 2;
             this.btnCA.Text = "CA";
             this.btnCA.UseVisualStyleBackColor = false;
+            this.btnCA.Click += new System.EventHandler(this.btnCA_Click);
             // 
             // btnDivicion
             // 
@@ -336,6 +337,7 @@
             this.btnResult.TabIndex = 20;
             this.btnResult.Text = "=";
             this.btnResult.UseVisualStyleBackColor = false;
+            this.btnResult.Click += new System.EventHandler(this.btnResult_Click);
             // 
             // btn0
             // 

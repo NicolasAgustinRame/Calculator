@@ -50,6 +50,7 @@
             this.btnResult = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.btnPunto = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbX)).BeginInit();
             this.SuspendLayout();
@@ -109,7 +110,7 @@
             this.btnCA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnCA.Location = new System.Drawing.Point(6, 85);
             this.btnCA.Name = "btnCA";
-            this.btnCA.Size = new System.Drawing.Size(166, 50);
+            this.btnCA.Size = new System.Drawing.Size(110, 50);
             this.btnCA.TabIndex = 2;
             this.btnCA.Text = "CA";
             this.btnCA.UseVisualStyleBackColor = false;
@@ -371,6 +372,22 @@
             this.btnPunto.UseVisualStyleBackColor = false;
             this.btnPunto.Click += new System.EventHandler(this.btnPunto_Click);
             // 
+            // btnBorrar
+            // 
+            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(65)))), ((int)(((byte)(75)))));
+            this.btnBorrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBorrar.FlatAppearance.BorderSize = 0;
+            this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnBorrar.Location = new System.Drawing.Point(118, 85);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(54, 50);
+            this.btnBorrar.TabIndex = 22;
+            this.btnBorrar.Text = "<--";
+            this.btnBorrar.UseVisualStyleBackColor = false;
+            this.btnBorrar.Click += new System.EventHandler(this.Backspace_Click);
+            // 
             // frmCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -378,6 +395,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(234, 350);
             this.ControlBox = false;
+            this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnPunto);
             this.Controls.Add(this.btnResult);
             this.Controls.Add(this.btn0);
@@ -433,6 +451,7 @@
         private System.Windows.Forms.Button btnResult;
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnPunto;
+        private System.Windows.Forms.Button btnBorrar;
     }
 }
 

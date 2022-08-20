@@ -173,5 +173,14 @@ namespace CalculadoraApp
                 txtDisplay.Text = resultado.ToString();
             }
         }
+
+        private void Backspace_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text != "0")
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1, 1);
+                
+            }
+        }
     }
 }
